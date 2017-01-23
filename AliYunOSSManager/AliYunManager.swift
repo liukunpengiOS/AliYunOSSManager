@@ -9,7 +9,7 @@
 import UIKit
 import AliyunOSSiOS
 
-class AliYunManager {
+public class AliYunManager {
     
     typealias progressBlock = (_ percent: Float) -> Void
     var progress: progressBlock?
@@ -23,7 +23,7 @@ class AliYunManager {
     fileprivate let secretKey = "QaUzWsNP1v0DewTpUDu8t7O6F1ihqk"
     fileprivate let endPoint = "https://oss-cn-hangzhou.aliyuncs.com"
     
-    static let manager = AliYunManager()
+    public static let manager = AliYunManager()
     private init () {
     
         configClient()
@@ -81,7 +81,7 @@ class AliYunManager {
         return count
     }
     
-    func upload(_ dataDic: NSDictionary,progress: @escaping progressBlock) {
+   public func upload(_ dataDic: NSDictionary,progress: @escaping progressBlock) {
         
         self.progress = progress
         count = calculateOperationCount(dataDic)
