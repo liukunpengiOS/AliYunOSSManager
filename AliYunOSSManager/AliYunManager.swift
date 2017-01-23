@@ -11,17 +11,17 @@ import AliyunOSSiOS
 
 public class AliYunManager {
     
-    typealias progressBlock = (_ percent: Float) -> Void
+    public typealias progressBlock = (_ percent: Float) -> Void
     public var progress: progressBlock?
     
-    fileprivate var client = OSSClient()
-    fileprivate let operationQueue = OperationQueue()
-    fileprivate var sumPercent: Float = 0
-    fileprivate var count = 0
+    public var client = OSSClient()
+    public let operationQueue = OperationQueue()
+    public var sumPercent: Float = 0
+    public var count = 0
 
-    fileprivate let accessKey = "p2LrCunAYaVi0ZfR"
-    fileprivate let secretKey = "QaUzWsNP1v0DewTpUDu8t7O6F1ihqk"
-    fileprivate let endPoint = "https://oss-cn-hangzhou.aliyuncs.com"
+    public let accessKey = "p2LrCunAYaVi0ZfR"
+    public let secretKey = "QaUzWsNP1v0DewTpUDu8t7O6F1ihqk"
+    public let endPoint = "https://oss-cn-hangzhou.aliyuncs.com"
     
     public static let manager = AliYunManager()
     private init () {
