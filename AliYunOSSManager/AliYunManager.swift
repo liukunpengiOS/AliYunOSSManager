@@ -12,7 +12,7 @@ import AliyunOSSiOS
 public class AliYunManager {
     
     typealias progressBlock = (_ percent: Float) -> Void
-    var progress: progressBlock?
+    public var progress: progressBlock?
     
     fileprivate var client = OSSClient()
     fileprivate let operationQueue = OperationQueue()
