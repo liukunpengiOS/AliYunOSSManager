@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'AliYunOSSManager'
-s.version      = '0.0.1'
+s.version      = '0.0.2'
 s.summary      = 'A simple manager class for AliYunOSS'
 s.homepage     = 'https://github.com/liukunpengiOS/AliYunOSSManager'
 s.license      = 'MIT'
